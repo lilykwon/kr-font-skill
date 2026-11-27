@@ -1,0 +1,19 @@
+{
+  "name": "kr-font-skill",
+  "version": "0.1.0",
+  "description": "AI 티 나지 않는 상업용 무료 한글/영문 폰트 찾기, 대체 폰트, 라이선스 점검, 한글 웹폰트 최적화. Tasteful, commercially free Korean and English fonts: research, alternatives, license audit, and Korean webfont optimization.",
+  "author": {
+    "name": "Lilly (WOX Studio)"
+  },
+  "license": "MIT",
+  "keywords": [
+    "font",
+    "korean",
+    "hangul",
+    "typography",
+    "license",
+    "webfont"
+  ],
+  "homepage": "https://github.com/lilykwon/kr-font-skill",
+  "repository": "https://github.com/lilykwon/kr-font-skill"
+}
