@@ -9,5 +9,9 @@
   "keywords": ["font", "korean", "hangul", "typography", "license", "webfont"],
   "icon": "./.claude-plugin/icon.png",
   "homepage": "https://github.com/lilykwon/kr-font-skill",
-  "repository": "https://github.com/lilykwon/kr-font-skill"
+  "repository": "https://github.com/lilykwon/kr-font-skill",
+  "documentationUrl": "https://github.com/lilykwon/kr-font-skill#readme",
+  "supportUrl": "https://github.com/lilykwon/kr-font-skill/issues",
+  "privacyPolicyUrl": "https://github.com/lilykwon/kr-font-skill/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/lilykwon/kr-font-skill/blob/main/TERMS.md"
 }
