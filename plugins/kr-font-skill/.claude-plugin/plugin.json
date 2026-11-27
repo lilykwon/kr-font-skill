@@ -6,14 +6,8 @@
     "name": "Lilly (WOX Studio)"
   },
   "license": "MIT",
-  "keywords": [
-    "font",
-    "korean",
-    "hangul",
-    "typography",
-    "license",
-    "webfont"
-  ],
+  "keywords": ["font", "korean", "hangul", "typography", "license", "webfont"],
+  "icon": "./icon.png",
   "homepage": "https://github.com/lilykwon/kr-font-skill",
   "repository": "https://github.com/lilykwon/kr-font-skill"
 }
