@@ -38,31 +38,26 @@ AI한테 폰트를 물어보면 늘 주아체, 도현체 같은 비슷한 폰트
 > 필요한 것: Claude 계정 (무료 요금제도 가능)
 > 걸리는 시간: 5분
 
-### 1. 스킬 파일 4개 받기
+### 1. 플러그인 파일 받기
 
-아래 링크를 하나씩 눌러 다운로드하세요. **압축을 풀지 말고 zip 그대로** 두세요.
+아래 링크를 눌러 다운로드하세요. **압축을 풀지 말고 zip 그대로** 두세요. 스킬 4개가 한 파일에 다 들어 있어요.
 
-- [font-research.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-research.zip) : 폰트 찾기 (이것만 넣어도 돼요)
-- [font-alternatives.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-alternatives.zip) : 비슷한 무료 폰트 찾기
-- [font-license-audit.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-license-audit.zip) : 라이선스 점검
-- [korean-webfont-optimize.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/korean-webfont-optimize.zip) : 웹폰트 최적화 (개발자용)
+- [kr-font-skill-plugin.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/kr-font-skill-plugin.zip)
 
-### 2. 파일 만들기 기능 켜기
+### 2. 플러그인 올리기
 
-claude.ai 왼쪽 아래 내 이름 > **설정** > **기능**에서 **코드 실행과 파일 만들기**를 켜 주세요. 스킬은 이 기능이 켜져 있어야 돌아가요.
+1. claude.ai 왼쪽 메뉴에서 **Plugins**를 눌러요.
+   <img src="docs/images/claude-01-sidebar.png" width="280" alt="왼쪽 메뉴의 Plugins">
+2. 오른쪽 위 **Add**를 누르고 **Upload plugin**을 골라요.
+   <img src="docs/images/claude-02-add-menu.png" width="360" alt="Add 메뉴의 Upload plugin">
+3. 1번에서 받은 `kr-font-skill-plugin.zip`을 점선 상자에 끌어다 놓거나 눌러서 고른 뒤, 왼쪽 아래 **Upload**를 눌러요.
+   <img src="docs/images/claude-03-upload.png" width="600" alt="Upload a plugin 화면">
 
-### 3. 스킬 올리기
+### 3. 설치 확인
 
-1. **맞춤 설정 > 스킬**로 들어가요.
-2. 오른쪽 위 **+** 버튼 > **스킬 만들기** > **스킬 업로드**를 눌러요.
-3. 1번에서 받은 zip 파일을 하나 올려요.
-4. 나머지 파일도 같은 방법으로 하나씩 올려요.
+플러그인 목록에 **kr-font-skill**이 보이고 켜져 있으면 끝이에요.
 
-### 4. 켜져 있는지 확인
-
-스킬 목록에 4개가 보이고 스위치가 켜져 있으면 끝이에요.
-
-### 5. 써 보기
+### 4. 써 보기
 
 새 대화를 열고 이렇게 말해 보세요.
 
@@ -72,8 +67,20 @@ claude.ai 왼쪽 아래 내 이름 > **설정** > **기능**에서 **코드 실�
 
 **잘 안 될 때**
 
-- 스킬이 안 불리는 것 같으면 "font-research 스킬로 찾아줘"처럼 이름을 같이 말해 보세요.
+- 스킬이 안 불리는 것 같으면 "/font-research 스킬로 찾아줘"처럼 이름을 같이 말해 보세요.
+- **Settings > Capabilities**에서 코드 실행과 파일 만들기(Code execution and file creation)가 꺼져 있으면 보드가 안 나올 수 있어요. 켜 주세요.
 - 일부 폰트는 Claude가 직접 받지 못해서 **공식 다운로드 링크**로 알려 줘요. 링크를 눌러 직접 받으면 돼요.
+
+<details>
+<summary>Plugins 메뉴가 없다면: 스킬로 하나씩 넣기</summary>
+1. 아래 zip을 받아요 (압축 풀지 않기). 폰트 찾기만 쓸 거면 `font-research.zip` 하나면 돼요.
+   - [font-research.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-research.zip)
+   - [font-alternatives.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-alternatives.zip)
+   - [font-license-audit.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/font-license-audit.zip)
+   - [korean-webfont-optimize.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/korean-webfont-optimize.zip)
+2. **Settings > Capabilities**에서 코드 실행과 파일 만들기를 켜요.
+3. **Customize > Skills**에서 `+` > **Upload a skill**로 zip을 하나씩 올려요.
+</details>
 
 ---
 
@@ -84,26 +91,44 @@ claude.ai 왼쪽 아래 내 이름 > **설정** > **기능**에서 **코드 실�
 
 ChatGPT는 아직 이 스킬을 바로 설치하는 기능이 없어서, **프로젝트**에 스킬 파일을 넣어 두고 쓰는 방식이에요.
 
-### 1. 스킬 파일 받기
+### 1. 파일 받기
 
-아래 링크를 눌러 다운로드하세요. (링크를 눌렀을 때 글자만 잔뜩 나오면, 화면에서 오른쪽 클릭 > **다른 이름으로 저장**을 누르세요.)
+아래 링크를 눌러 다운로드하세요. **압축을 풀지 말고 zip 그대로** 두세요. Claude와 같은 파일이고, 스킬 4개가 한 파일에 다 들어 있어요.
 
-- [font-research.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-research.md) : 폰트 찾기
-- [font-alternatives.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-alternatives.md) : 비슷한 무료 폰트 찾기
-- [font-license-audit.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-license-audit.md) : 라이선스 점검
-- [korean-webfont-optimize.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/korean-webfont-optimize.md) : 웹폰트 최적화 (개발자용)
+- [kr-font-skill-plugin.zip](https://github.com/lilykwon/kr-font-skill/raw/main/dist/kr-font-skill-plugin.zip)
 
-### 2. 프로젝트 만들기
+### 2. Skills 화면 열기
 
-ChatGPT 왼쪽 사이드바에서 **새 프로젝트**를 누르고 이름을 "폰트 찾기"처럼 정해요.
+왼쪽 아이콘 줄에서 **Customize** 아이콘을 누르고 **Skills**를 골라요.
 
-### 3. 파일 올리기
-
-프로젝트 화면에서 **파일 추가**를 누르고 1번에서 받은 파일을 올려요.
-
-### 4. 지침 붙여 넣기
-
-프로젝트 **지침**(설정) 칸에 아래 문장을 그대로 복사해서 붙여 넣으세요.
+<img src="docs/images/gpt-01-customize.png" width="360" alt="Customize 메뉴의 Skills">
+### 3. 스킬 올리기
+ 
+1. 오른쪽 위 **Add**를 눌러요.
+<img src="docs/images/gpt-02-add.png" width="420" alt="Skills 화면의 Add 버튼">
+2. **Upload from your computer**를 골라요.
+<img src="docs/images/gpt-03-add-menu.png" width="420" alt="Add 메뉴의 Upload from your computer">
+3. 1번에서 받은 `kr-font-skill-plugin.zip`을 점선 상자에 끌어다 놓거나 눌러서 골라요.
+<img src="docs/images/gpt-04-upload.png" width="560" alt="Upload a skill 창">
+### 4. 써 보기
+ 
+새 대화를 열고 이렇게 말해 보세요. 웹 검색이 켜져 있어야 실제 폰트 사이트를 찾아봐요.
+ 
+> 레트로하지만 고급스러운 카페 브랜드 폰트 찾아줘, 한글만
+ 
+보드가 HTML 파일로 오면, 받은 파일을 더블클릭해서 브라우저로 열어 보세요.
+ 
+**잘 안 될 때**
+- 스킬이 안 불리는 것 같으면 "font-research 스킬로 찾아줘"처럼 이름을 같이 말해 보세요.
+<details>
+<summary>Skills 메뉴가 없다면: 프로젝트에 넣어 쓰기</summary>
+1. 아래 파일을 받아요. (글자만 잔뜩 나오면 화면에서 오른쪽 클릭 > **다른 이름으로 저장**)
+   - [font-research.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-research.md)
+   - [font-alternatives.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-alternatives.md)
+   - [font-license-audit.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/font-license-audit.md)
+   - [korean-webfont-optimize.md](https://github.com/lilykwon/kr-font-skill/raw/main/dist/chatgpt/korean-webfont-optimize.md)
+2. 새 **프로젝트**를 만들고 받은 파일을 프로젝트 파일로 올려요.
+3. 프로젝트 지침에 아래 문장을 붙여 넣어요.
 
 ```
 폰트를 찾거나, 비슷한 폰트를 찾거나, 폰트 라이선스나 웹폰트에 대한 요청이 오면
